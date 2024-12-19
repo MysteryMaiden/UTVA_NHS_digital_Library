@@ -1,0 +1,265 @@
+/* Base styles for the navigation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(19, 26, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    min-width: 160px; /* Adjusted width for consistency */
+    text-align: center;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+nav li:hover,
+nav li:focus-within {
+    background-color: rgb(0, 6, 39);
+}
+
+/* Submenu styles */
+nav li ul {
+    width: 200px; /* Set width for the submenu */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(19, 26, 65);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li:hover ul,
+nav li:focus-within ul {
+    display: block;
+}
+
+nav li ul li {
+    padding: 10px;
+    width: 100%; /* Ensure submenu items match the parent width */
+}
+
+nav li ul li:hover {
+    background-color: rgb(0, 6, 39);
+}
+
+/* Ensure submenu items don't expand beyond the main menu */
+nav li ul li a {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Logo and header image styles */
+.NHSlogo {
+    width: 150px;
+}
+
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-img h1,
+.header-img h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.header-img h1 {
+    font-size: 5vw;
+}
+
+.header-img h2 {
+    font-size: 3vw;
+    margin-top: 10px;
+}
+
+/* Home page content styles */
+.home-page-divs {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 30px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.home-page-divs .text {
+    flex: 1;
+}
+
+.home-page-divs .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-divs h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.home-page-divs p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.square-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    max-height: 300px;
+}
+
+/* Team section */
+.OurTeamDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team-member {
+    text-align: center;
+    width: 18%;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(19, 26, 65);
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .header-img h1 {
+        font-size: 6vw;
+    }
+
+    .header-img h2 {
+        font-size: 4vw;
+    }
+
+    .home-page-divs {
+        flex-direction: column;
+    }
+
+    .home-page-divs .text,
+    .home-page-divs .image-container {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+.OurTeamDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.our-team-heading {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+}
+
+.team-member {
+    text-align: center;
+    width: 18%;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
