@@ -196,12 +196,13 @@ nav li ul li a {
     text-align: center;
     width: 18%;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .team-member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 30%;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
     object-fit: cover; 
 }
 
