@@ -1,4 +1,10 @@
 /* Base styles for the navigation */
+.created{
+    font-size:
+    font-size: 0.9rem; 
+    color: #555; 
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
