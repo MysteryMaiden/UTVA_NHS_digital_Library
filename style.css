@@ -5,6 +5,10 @@
     color: #555; 
 }
 
+#math, #ela, #science {
+    padding-top: 80px;  /* Adjust this value based on the height of your header */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
