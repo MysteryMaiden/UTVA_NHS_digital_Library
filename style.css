@@ -271,12 +271,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
 /* Educational Content Header */
 .educational-header {
     background: url('Library.jpg') no-repeat center center/cover;
