@@ -199,13 +199,6 @@ nav li ul li a {
     font-size: 20px;
 }
 
-.team-member img {
-    width: 200px !important;
-    height: 200px !important;
-    border-radius: 50%;
-    object-fit: cover; 
-}
-
 /* Footer styles */
 footer {
     text-align: center;
@@ -261,7 +254,8 @@ footer {
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
