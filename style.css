@@ -1,4 +1,16 @@
 /* Base styles for the navigation */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 20px;
+}
+
 .created{
     font-size:
     font-size: 0.9rem; 
