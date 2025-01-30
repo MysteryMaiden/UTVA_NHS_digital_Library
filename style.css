@@ -5,15 +5,11 @@
     color: #555; 
 } 
 
-#ela, #science, #mental-health, #test-prep {
-    padding-top: 80px;  /* Adjust this value based on the height of your header */
+#ela, #science, #mental-health, #test-prep, #math, #fun {
     text-align: center;   
+    padding-top: 80px;
+    margin-top: -80px;
 }
-
-#math, #fun {
-    text-align: center;   
-}
-
 
 body {
     font-family: Arial, sans-serif;
