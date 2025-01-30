@@ -5,7 +5,7 @@
     color: #555; 
 } 
 
-#math, #ela, #science {
+#math, #ela, #science, #fun, #mental-health, #test-prep {
     padding-top: 80px;  /* Adjust this value based on the height of your header */
     text-align: center;
     
