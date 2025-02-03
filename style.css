@@ -17,10 +17,16 @@
     color: #555; 
 } 
 
-#lll-link, #chat-link, #ela, #science, #mental-health, #test-prep, #math, #fun, #other-other {
+#lll-link, #chat-link, #ela, #science, #mental-health, #test-prep, #other-other {
     text-align: center;   
     padding-top: 80px;
-    margin-top: -80px;
+    margin-top: -70px;
+}
+
+#math, #fun {
+   text-align: center;   
+    padding-top: 80px;
+    margin-top: -80px; 
 }
 
 body {
