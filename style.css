@@ -337,6 +337,7 @@ footer {
     width: calc(33% - 20px);
     box-sizing: border-box;
     text-align: center;
+    min-height: 220px;
 }
 
 .card h3 {
