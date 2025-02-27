@@ -39,7 +39,7 @@
                 <div class="text">
                     <h3>Learning league of legends zoom link</h3>
                     <p>Join the LLL Zoom rooms this Wednesday from 11:00 AM to 11:30 AM! It’s the perfect opportunity to make new friends, improve your skills, and boost your grades. Whether you want to play video games, write letters, or just have a good time with others, the LLL Zoom rooms are your space to connect, learn, and grow. Don’t miss out on the fun and valuable tutor room time, see you there!</p>
-                    <a href="https://utva.zoom.us/j/96019004809?pwd=tDd2o5hXOwgnb1VIHlqqbVBJW2XNrN.1">Join Room!</a>
+                    <a id="joinRoomButton" href="https://utva.zoom.us/j/96019004809?pwd=tDd2o5hXOwgnb1VIHlqqbVBJW2XNrN.1">Join Room!</a>
                 </div>
                 <div class="image-container">
                     <img class="square-image" src="md-duran-1VqHRwxcCCw-unsplash.jpg" alt="About Us Image">
@@ -64,20 +64,21 @@
 
         <script src="script.js"></script>
          <script>
-        // Get the current date and time in Utah (Mountain Standard Time)
-        const now = new Date();
-        const currentDay = now.getUTCDay(); // 0 is Sunday, 1 is Monday, ..., 3 is Wednesday
-        const currentHour = now.getUTCHours() - 7; // Adjust for Utah's UTC offset (MST)
-        const currentMinute = now.getUTCMinutes();
+// Get the current date and time in Utah (Mountain Standard Time)
+const now = new Date();
+const currentDay = now.getUTCDay(); // 0 is Sunday, 1 is Monday, ..., 3 is Wednesday
+const currentHour = now.getUTCHours() - 7; // Adjust for Utah's UTC offset (MST)
+const currentMinute = now.getUTCMinutes();
 
-        // Check if it's Wednesday and between 11:00 AM and 11:30 AM
-        if (currentDay === 3 && currentHour === 11 && currentMinute >= 0 && currentMinute < 30) {
-            document.getElementById('joinRoomButton').style.display = 'inline'; // Show the button
-        } else {
-            document.getElementById('joinRoomButton').onclick = function(event) {
-                event.preventDefault(); // Prevent the default action
-                alert("The LLL rooms are not open yet, please wait until 11:00 - 11:30 AM Wednesday");
-            };
+// Check if it's Wednesday and between 11:00 AM and 11:30 AM
+if (currentDay === 3 && currentHour === 11 && currentMinute >= 0 && currentMinute < 30) {
+    document.getElementById('joinRoomButton').style.display = 'inline'; // Show the button
+} else {
+    document.getElementById('joinRoomButton').onclick = function(event) {
+        event.preventDefault(); // Prevent the default action
+        alert("The LLL rooms are not open yet, please wait until 11:00 - 11:30 AM Wednesday");
+    };
+}
         }
     </script>
     </body>
