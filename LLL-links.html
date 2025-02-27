@@ -63,5 +63,22 @@
         </footer>
 
         <script src="script.js"></script>
+         <script>
+        // Get the current date and time in Utah (Mountain Standard Time)
+        const now = new Date();
+        const currentDay = now.getUTCDay(); // 0 is Sunday, 1 is Monday, ..., 3 is Wednesday
+        const currentHour = now.getUTCHours() - 7; // Adjust for Utah's UTC offset (MST)
+        const currentMinute = now.getUTCMinutes();
+
+        // Check if it's Wednesday and between 11:00 AM and 11:30 AM
+        if (currentDay === 3 && currentHour === 11 && currentMinute >= 0 && currentMinute < 30) {
+            document.getElementById('joinRoomButton').style.display = 'inline'; // Show the button
+        } else {
+            document.getElementById('joinRoomButton').onclick = function(event) {
+                event.preventDefault(); // Prevent the default action
+                alert("The LLL rooms are not open yet, please wait until 11:00 - 11:30 AM Wednesday");
+            };
+        }
+    </script>
     </body>
 </html>
