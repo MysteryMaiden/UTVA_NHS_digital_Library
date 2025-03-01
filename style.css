@@ -408,32 +408,5 @@ footer {
 }
 
 
-.card-overide h3 {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 10px;
-}
 
-.card-overide a {
-    color: rgb(19, 26, 65);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card-overide a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design for Cards */
-@media (max-width: 800px) {
-    .bookcard {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 500px) {
-    .bookcard {
-        width: 100%;
-    }
-}
 
