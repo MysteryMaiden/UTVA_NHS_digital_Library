@@ -375,3 +375,60 @@ footer {
         width: 100%;
     }
 }
+
+/*  The Book Nook CSS  */
+.book-nook {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.book-nook h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.book-nook p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Book Card Styles */
+.book-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bookcard h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bookcard a {
+    color: rgb(19, 26, 65);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bookcard a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 800px) {
+    .bookcard {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .bookcard {
+        width: 100%;
+    }
+}
+
