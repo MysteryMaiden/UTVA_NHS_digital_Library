@@ -396,7 +396,7 @@ footer {
 
 /* Book Card Styles */
 .book-image {
-    width: calc(100% - 25px);px;
+    width: calc(100% - 25px); /* Fixed the syntax */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
