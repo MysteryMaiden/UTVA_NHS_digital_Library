@@ -418,14 +418,15 @@ footer {
 
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 800px) {
-    .card {
+    .book-card {
         width: calc(50% - 20px);
     }
 }
 
 @media (max-width: 500px) {
-    .card {
+    .book-card {
         width: 100%;
     }
 }
