@@ -396,26 +396,31 @@ footer {
 
 /* Book Card Styles */
 .book-image {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 275px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.bookcard h3 {
+.card-overide {
+    width: 250px;
+}
+
+
+.card-overide h3 {
     font-size: 1.3rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.bookcard a {
+.card-overide a {
     color: rgb(19, 26, 65);
     text-decoration: none;
     font-weight: bold;
 }
 
-.bookcard a:hover {
+.card-overide a:hover {
     text-decoration: underline;
 }
 
