@@ -37,6 +37,134 @@
         </header>
         <main>
 <!---->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .book-container {
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .book-cover {
+      width: 300px;
+      height: 400px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .book-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .book-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .book-author {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #666;
+    }
+
+    .separator {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .book-description {
+      margin-bottom: 1rem;
+    }
+
+    .book-info {
+      margin-bottom: 1rem;
+    }
+
+    .book-info p {
+      margin: 0.3rem 0;
+    }
+
+    .rating-section {
+      margin-top: 1rem;
+    }
+
+    .rating-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .stars {
+      font-size: 1.5rem;
+      color: gold;
+    }
+
+    .stars span {
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="book-container">
+    <div class="book-cover">
+      Book Cover
+    </div>
+
+    <div class="book-details">
+      <div class="book-title">Example Book Title</div>
+      <div class="book-author">by Jane Doe</div>
+      <div class="separator"></div>
+
+      <div class="section-title">Book Description</div>
+      <div class="book-description">
+        This is a brief summary of the book. It provides an overview of the plot, characters, and themes. This placeholder text is meant to simulate a real book description for layout purposes.
+      </div>
+
+      <div class="book-info">
+        <p><strong>Lexile Level:</strong> 880L</p>
+        <p><strong>Publication Date:</strong> March 15, 2023</p>
+        <p><strong>Publisher:</strong> Example Publishing</p>
+        <p><strong>Page Count:</strong> 320 pages</p>
+      </div>
+
+      <div class="rating-section">
+        <div class="rating-title">Rating</div>
+        <div class="stars">
+          ★ ★ ★ ★ <span>★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+            
+            
           
         </main>
 
