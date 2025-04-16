@@ -6,46 +6,20 @@
         <title>Educational Content</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header> 
-             <nav id="navbar" role="navigation">
-                <img class="NHSlogo" src="./National-Honor-Society-Logo.png" alt="National Honor Society Logo" />
-                <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">&#9776;</div>
-                <ul id="nav-links" aria-label="Main Navigation">
-                    <li><a href="index.html">Homepage</a></li>
-                    <li class="submenu">
-                        <a href="educontent.html">Educational Content</a>
-                        <ul>
-                            <li><a href="educontent.html#math">Math</a></li>
-                            <li><a href="educontent.html#ela">ELA</a></li>
-                            <li><a href="educontent.html#science">Science</a></li>
-                        </ul>
-                    </li>
-                    <li class="submenu">
-                        <a href="othercontent.html">Other Content</a>
-                        <ul>
-                            <li><a href="othercontent.html#fun">Fun Stuff</a></li>
-                            <li><a href="othercontent.html#mental-health">Mental and Physical Health</a></li>
-                            <li><a href="othercontent.html#test-prep">Test Prep</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="LLL-links.html">LLL links</a></li>
-                    <li><a href="booknook.html">The Book Nook</a></li>
-                </ul>
-            </nav>
-        </header>
-
-<!---->
-  <style>
+        <style>
     body {
       font-family: Arial, sans-serif;
       background-color: white;
       color: black;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      display: block;
+    }
+
+    .main-content {
       display: flex;
       justify-content: center;
+      padding: 2rem;
     }
 
     .book-container {
@@ -125,43 +99,82 @@
     .stars span {
       color: lightgray;
     }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #f0f0f0;
+      color: #333;
+      font-size: 0.9rem;
+    }
   </style>
-</head>
-<body>
+    </head>
+    <body>
+        <header> 
+             <nav id="navbar" role="navigation">
+                <img class="NHSlogo" src="./National-Honor-Society-Logo.png" alt="National Honor Society Logo" />
+                <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">&#9776;</div>
+                <ul id="nav-links" aria-label="Main Navigation">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li class="submenu">
+                        <a href="educontent.html">Educational Content</a>
+                        <ul>
+                            <li><a href="educontent.html#math">Math</a></li>
+                            <li><a href="educontent.html#ela">ELA</a></li>
+                            <li><a href="educontent.html#science">Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="othercontent.html">Other Content</a>
+                        <ul>
+                            <li><a href="othercontent.html#fun">Fun Stuff</a></li>
+                            <li><a href="othercontent.html#mental-health">Mental and Physical Health</a></li>
+                            <li><a href="othercontent.html#test-prep">Test Prep</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="LLL-links.html">LLL links</a></li>
+                    <li><a href="booknook.html">The Book Nook</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <div class="book-container">
-    <div class="book-cover">
-      Book Cover
-    </div>
-
-    <div class="book-details">
-      <div class="book-title">Example Book Title</div>
-      <div class="book-author">by Jane Doe</div>
-      <div class="separator"></div>
-
-      <div class="section-title">Book Description</div>
-      <div class="book-description">
-        This is a brief summary of the book. It provides an overview of the plot, characters, and themes. This placeholder text is meant to simulate a real book description for layout purposes.
+<!---->
+  <div class="main-content">
+    <div class="book-container">
+      <div class="book-cover">
+        Book Cover
       </div>
 
-      <div class="book-info">
-        <p><strong>Lexile Level:</strong> 880L</p>
-        <p><strong>Publication Date:</strong> March 15, 2023</p>
-        <p><strong>Publisher:</strong> Example Publishing</p>
-        <p><strong>Page Count:</strong> 320 pages</p>
-      </div>
+      <div class="book-details">
+        <div class="book-title">Example Book Title</div>
+        <div class="book-author">by Jane Doe</div>
+        <div class="separator"></div>
 
-      <div class="rating-section">
-        <div class="rating-title">Rating</div>
-        <div class="stars">
-          ★ ★ ★ ★ <span>★</span>
+        <div class="section-title">Book Description</div>
+        <div class="book-description">
+          This is a brief summary of the book. It provides an overview of the plot, characters, and themes. This placeholder text is meant to simulate a real book description for layout purposes.
+        </div>
+
+        <div class="book-info">
+          <p><strong>Lexile Level:</strong> 880L</p>
+          <p><strong>Publication Date:</strong> March 15, 2023</p>
+          <p><strong>Publisher:</strong> Example Publishing</p>
+          <p><strong>Page Count:</strong> 320 pages</p>
+        </div>
+
+        <div class="rating-section">
+          <div class="rating-title">Rating</div>
+          <div class="stars">
+            ★ ★ ★ ★ <span>★</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-        <footer>
-            <p>&copy; 2024 Utah Virtual Academy National Honor Society | All rights reserved</p>
-        </footer>
-    </body>
+  <footer>
+    <p>&copy; 2024 Utah Virtual Academy National Honor Society | All rights reserved</p>
+  </footer>
+
+</body>
 </html>
